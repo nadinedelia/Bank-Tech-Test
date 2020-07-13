@@ -26,9 +26,13 @@ You'll work alone, and you'll also review your own code so you can practice refl
 > So I can use my hard-earned money to buy nice things,  
 > I want to be able to withdraw money
 
+- []
+
 > As a bank account owner,  
 > So I know how much I stupidly spend on xmas drinks
 > I want to be able to see my current balance
+
+- [x] Done
 
 > As a bank account owner,  
 > So I can remember when I've spend all my savings on a bender

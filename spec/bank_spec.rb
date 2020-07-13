@@ -15,5 +15,9 @@ describe Account do
         expect(subject.balance).to eq(10)
     end
 
+    it 'should be able to withdraw money' do
+        expect(subject).to respond_to(:withdraw).with(1).arguments
+    end
+
 end
 
