@@ -6,5 +6,9 @@ describe Account do
         expect(subject).to respond_to(:deposit).with(1).arguments
     end
 
+    it 'should start with a balance of 0' do
+        expect(subject.balance).to eq(0)
+    end
+
 end
 
