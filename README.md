@@ -39,7 +39,7 @@ You'll work alone, and you'll also review your own code so you can practice refl
 > I don't want to be able to get into an unarranged overdraft
 
 > As a bank account owner,  
-> So I can remember when I've spend all my savings on a bender
+> So I can remember the time I've lost all my savings on a bender
 > I want to be able to see the date of each transaction
 
 > As a bank account owner,  
