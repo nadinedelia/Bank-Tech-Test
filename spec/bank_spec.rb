@@ -32,5 +32,3 @@ describe Account do
     
 
 end
-
-# expect(subject.withdraw(30)).to raise_error("You don't have sufficient funds")
