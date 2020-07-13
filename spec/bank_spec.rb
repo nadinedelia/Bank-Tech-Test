@@ -10,5 +10,10 @@ describe Account do
         expect(subject.balance).to eq(0)
     end
 
+    it 'should increase balance after money was deposited' do
+        subject.deposit(10)
+        expect(subject.balance).to eq(10)
+    end
+
 end
 
