@@ -21,6 +21,7 @@ class Account
         else
         @balance -= money
     end
-end
+    end
+
 
 end

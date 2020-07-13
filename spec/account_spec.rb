@@ -1,4 +1,4 @@
-require 'bank'
+require 'account'
 
 describe Account do
 
@@ -29,6 +29,8 @@ describe Account do
         subject.deposit(20)
         expect{ subject.withdraw(30) }.to raise_error(RuntimeError)
     end
+
+    
     
 
 end
