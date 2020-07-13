@@ -15,4 +15,8 @@ class Account
         @balance
     end
 
+    def withdraw(money)
+        
+    end
+
 end
