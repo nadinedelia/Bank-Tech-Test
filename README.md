@@ -10,6 +10,10 @@ You'll work alone, and you'll also review your own code so you can practice refl
 
 ### User Stories
 
+> As a bank,  
+> So I don't give away money,  
+> I want every new bank account to start with a balance of 0
+
 > As a bank account owner,  
 > So I can store my money in a save place,  
 > I want to be able to deposit money into my account
