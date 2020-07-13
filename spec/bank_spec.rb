@@ -19,5 +19,11 @@ describe Account do
         expect(subject).to respond_to(:withdraw).with(1).arguments
     end
 
+    it 'should decrease balance after money was withdrawn' do
+        subject.deposit(30)
+        subject.withdraw(10)
+        expect(subject.balance).to eq(20)
+    end
+
 end
 
