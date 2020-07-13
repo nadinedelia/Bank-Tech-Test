@@ -12,7 +12,7 @@ class Account
     end
 
     def balance
-        @balance
+        balance = '%.2f' % @balance
     end
 
     def withdraw(money)
