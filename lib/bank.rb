@@ -20,7 +20,7 @@ class Account
         raise "You don't have sufficient funds"
         else
         @balance -= money
-        end
     end
+end
 
 end

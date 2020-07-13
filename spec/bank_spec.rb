@@ -27,8 +27,10 @@ describe Account do
 
     it 'should throw error when funds insufficient' do
         subject.deposit(20)
-        expect(subject.withdraw(30)).to raise_error("You don't have sufficient funds")
+        expect{ subject.withdraw(30) }.to raise_error(RuntimeError)
     end
+    
 
 end
 
+# expect(subject.withdraw(30)).to raise_error("You don't have sufficient funds")
