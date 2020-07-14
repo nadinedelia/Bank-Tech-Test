@@ -1,10 +1,13 @@
+require_relative 'transaction'
+require_relative 'statement'
 
 class Account
 
-    attr_reader :balance
+    attr_reader :balance, :transaction_history
 
     def initialize
         @balance = 0
+        @date = Time.now.strftime("%d/%m/%Y")
     end
 
     def deposit(money)
