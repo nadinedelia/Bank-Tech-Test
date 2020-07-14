@@ -10,7 +10,7 @@ class Account
         @date = Time.now.strftime("%d/%m/%Y")
         @transaction_history = [] 
         @transaction = transaction
-        @statement = statement
+        @header = 'date || credit || debit || balance'
     end
 
     def deposit(money)
@@ -33,6 +33,14 @@ class Account
         transaction = @transaction.new(debit: money, balance: @balance)
         @transaction_history << transaction
     end
+    end
+
+
+    def statement
+            puts @header
+            transaction_history.reverse.each do |tran|
+              puts tran
+            end
     end
 
 end
