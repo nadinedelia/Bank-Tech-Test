@@ -1,28 +1,29 @@
 require_relative 'transaction'
-require_relative 'statement'
+# require_relative 'statement'
 
 class Account
 
     attr_reader :balance, :transaction_history
 
-    def initialize(transaction = Transaction, statement = Statement.new)
+    def initialize(transaction = Transaction)
+        # statement = Statement.new
         @balance = 0
         @date = Time.now.strftime("%d/%m/%Y")
         @transaction_history = [] 
         @transaction = transaction
-        @header = 'date || credit || debit || balance'
+        # @statement = statement
+        @header = "date || credit || debit || balance\n"
+
     end
 
     def deposit(money)
         @balance += money
         transaction = @transaction.new(credit: money, balance: @balance)
         @transaction_history << transaction
-        puts "New deposit of £#{money} was saved into your account"
     end
 
     def balance
         @balance
-        puts "You're current balance is £#{@balance}."
     end
 
     def withdraw(money)
@@ -33,20 +34,29 @@ class Account
 
         transaction = @transaction.new(debit: money, balance: @balance)
         @transaction_history << transaction
-        puts "Money withdrawn: £#{money}"
     end
     end
 
     
-    def statement
+    # def statement
 
-            puts @header
-            transaction_history.reverse.each do |tran|
-              puts tran
-            end
+    #         puts @header
+    #         transaction_history.reverse.each do |tran|
+    #           puts tran
+    #         end
 
-            # transaction_history.each { |trans| puts "#{date} || £#{credit} || £#{debit} || £#{balance}" }
+    #         # transaction_history.each { |trans| puts "#{date} || £#{credit} || £#{debit} || £#{balance}" }
     
+    #     end
+
+
+    def print
+        puts @header
+        array = @transaction_history.map do |transaction|
+          "#{@date} || #{@credit} || "\
+          "#{@debit} || #{@balance}\n"
         end
+        puts array.reverse.join("")
+      end
 
 end

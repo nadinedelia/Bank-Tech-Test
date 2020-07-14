@@ -1,15 +1,12 @@
 class Statement 
 
-    def statement
-      puts print_header
-    
-    end
-  
-    def print_header
-      "date || credit || debit || balance"
-    end
-  
-    def formatting(input)
-      input == "" ? "" : "%.2f" % input
-    end
+
+  def header
+    puts "date || credit || debit || balance\n"
   end
+  
+  def format(number)
+    number == 0 ? "" : "%.2f" % number
+  end
+
+end
