@@ -38,18 +38,6 @@ class Account
     end
 
     
-    # def statement
-
-    #         puts @header
-    #         transaction_history.reverse.each do |tran|
-    #           puts tran
-    #         end
-
-    #         # transaction_history.each { |trans| puts "#{date} || £#{credit} || £#{debit} || £#{balance}" }
-    
-    #     end
-
-
     def print
         puts @header
         array = @transaction_history.map do |transaction|
