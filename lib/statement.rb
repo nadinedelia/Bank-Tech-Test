@@ -13,3 +13,4 @@ class Statement
       input == "" ? "" : "%.2f" % input
     end
   end
+  

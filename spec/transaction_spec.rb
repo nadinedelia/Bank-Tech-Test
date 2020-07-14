@@ -6,6 +6,7 @@ require 'transaction'
 # 13/01/2012 || 2000.00 || || 3000.00
 # 10/01/2012 || 1000.00 || || 1000.00
 
+
 describe Transaction do
     it 'is initialised with a date, credit, debit and balance' do
     date = Time.now.strftime("%d/%m/%Y")
