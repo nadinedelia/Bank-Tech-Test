@@ -14,7 +14,7 @@ class Account
 
     def deposit(money)
         @balance += money
-        transaction = @transaction.new(credit=money, balance=@balance)
+        transaction = @transaction.new(credit: money, balance: @balance)
         @transaction_history << transaction
     end
 
@@ -29,7 +29,7 @@ class Account
         else
         @balance -= money
 
-        transaction = @transaction.new(debit=money, balance=@balance)
+        transaction = @transaction.new(debit: money, balance: @balance)
         @transaction_history << transaction
     end
     end

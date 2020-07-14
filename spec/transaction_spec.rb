@@ -8,7 +8,7 @@ require 'transaction'
 
 
 describe Transaction do
-    it 'is initialised with a date, credit, debit and balance' do
+    xit 'is initialised with a date, credit, debit and balance' do
     date = Time.now.strftime("%d/%m/%Y")
     transaction = Transaction.new(date, 1000, 0, 1000)
     expect(transaction.date).to eq(Time.now.strftime("%d/%m/%Y"))

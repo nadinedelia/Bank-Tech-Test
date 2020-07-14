@@ -85,14 +85,12 @@
       "/Users/nadinedelia/Projects/bank/lib/transaction.rb": {
         "lines": [
           1,
-          null,
           1,
           null,
-          1,
-          5,
-          5,
-          5,
-          5,
+          4,
+          4,
+          4,
+          4,
           null,
           null,
           null,
@@ -114,6 +112,7 @@
           null,
           1,
           0,
+          null,
           null,
           null
         ]
@@ -141,12 +140,12 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null,
@@ -154,6 +153,6 @@
         ]
       }
     },
-    "timestamp": 1594722928
+    "timestamp": 1594723523
   }
 }
