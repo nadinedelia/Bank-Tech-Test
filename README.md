@@ -10,43 +10,57 @@ You'll work alone, and you'll also review your own code so you can practice refl
 
 ### User Stories
 
-> As a bank,  
-> So I don't give away money,  
+```
+> As a bank,
+> So I don't give away money,
 > I want every new bank account to start with a balance of 0
+```
 
 - [x] Done
 
-> As a bank account owner,  
-> So I can store my money in a save place,  
+```
+> As a bank account owner,
+> So I can store my money in a save place,
 > I want to be able to deposit money into my account
+```
 
 - [x] Done
 
-> As a bank account owner,  
-> So I can use my hard-earned money to buy nice things,  
+```
+> As a bank account owner,
+> So I can use my hard-earned money to buy nice things,
 > I want to be able to withdraw money
+```
 
 - [x] Done
 
-> As a bank account owner,  
+```
+> As a bank account owner,
 > So I know how much I stupidly spend on xmas drinks
 > I want to be able to see my current balance
+```
 
 - [x] Done
 
-> As a bank account owner,  
+```
+> As a bank account owner,
 > So I don't spend money I don't have while severely intoxicated
 > I don't want to be able to get into an unarranged overdraft
+```
 
 - [x] Done
 
-> As a bank account owner,  
+```
+> As a bank account owner,
 > So I can remember the time I've lost all my savings on a bender
 > I want to be able to see the date of each transaction
+```
 
-> As a bank account owner,  
-> So I can have proof for my settled-status application,  
+```
+> As a bank account owner,
+> So I can have proof for my settled-status application,
 > I want to be able to print my bank statements
+```
 
 ## Specification
 
