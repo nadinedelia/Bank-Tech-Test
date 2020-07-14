@@ -5,11 +5,12 @@ class Account
 
     attr_reader :balance, :transaction_history
 
-    def initialize(transaction = Transaction)
+    def initialize(transaction = Transaction, statement = Statement.new)
         @balance = 0
         @date = Time.now.strftime("%d/%m/%Y")
         @transaction_history = [] 
         @transaction = transaction
+        @statement = statement
     end
 
     def deposit(money)
@@ -33,10 +34,5 @@ class Account
         @transaction_history << transaction
     end
     end
-
-
-    def statement
-        @transaction_history
-      end
 
 end

@@ -1,8 +1,8 @@
 class Statement 
 
-    def printed_statement
+    def statement
       puts print_header
-  
+    
     end
   
     def print_header
@@ -13,4 +13,3 @@ class Statement
       input == "" ? "" : "%.2f" % input
     end
   end
-  
