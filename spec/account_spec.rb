@@ -31,11 +31,6 @@ describe Account do
         expect{ account.withdraw(30) }.to raise_error(RuntimeError)
     end
 
-    it 'should print a statement with date and header' do
-        account.deposit(1000, "10/01/2012")
-        expect{ account.print_statement }.to eq("date || credit || debit || balance\n10/01/2012 || 1000.00 || || 1000.00")
-      end
-    
     
 
 end
