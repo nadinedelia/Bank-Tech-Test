@@ -64,6 +64,8 @@ So I can have proof for my settled-status application,
 I want to be able to print my bank statements
 ```
 
+- [] in progress
+
 ## Specification
 
 ### Requirements

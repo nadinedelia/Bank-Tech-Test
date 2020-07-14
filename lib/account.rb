@@ -38,8 +38,8 @@ class Account
 
     def statement
             puts @header
-            transaction_history.reverse.each do |tran|
-              puts tran
+            transaction_history.reverse.each do |trans|
+              puts trans
             end
     end
 
