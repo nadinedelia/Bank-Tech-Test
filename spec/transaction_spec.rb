@@ -10,7 +10,10 @@ require 'transaction'
 describe Transaction do
     xit 'is initialised with a date, credit, debit and balance' do
     date = Time.now.strftime("%d/%m/%Y")
-    transaction = Transaction.new(date, 1000, 0, 1000)
+    credit = 1000
+    debit = 0
+    balance = 1000
+    transaction = Transaction.new(date, credit, debit, balance)
     expect(transaction.date).to eq(Time.now.strftime("%d/%m/%Y"))
     expect(transaction.credit).to eq(1000)
     expect(transaction.debit).to eq(0)

@@ -56,6 +56,8 @@ So I can remember the time I've lost all my savings on a bender
 I want to be able to see the date of each transaction
 ```
 
+- [x] Done
+
 ```
 As a bank account owner,
 So I can have proof for my settled-status application,
