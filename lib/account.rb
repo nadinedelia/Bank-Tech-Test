@@ -5,13 +5,18 @@ class Account
 
     attr_reader :balance, :transaction_history
 
-    def initialize
+    def initialize(transaction = Transaction)
         @balance = 0
         @date = Time.now.strftime("%d/%m/%Y")
+        @transaction_history = [] 
+        @transaction = transaction
     end
 
     def deposit(money)
         @balance += money
+
+        transaction = @transaction.new(credit: money, balance: @balance)
+        @transaction_history << transaction
     end
 
     def balance
@@ -24,8 +29,10 @@ class Account
         raise "You don't have sufficient funds"
         else
         @balance -= money
-    end
-    end
 
+        transaction = @transaction.new(debit: money, balance: @balance)
+        @transaction_history << transaction
+    end
+    end
 
 end
