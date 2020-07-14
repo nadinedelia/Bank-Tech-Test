@@ -34,4 +34,9 @@ class Account
     end
     end
 
+
+    def statement
+        @transaction_history
+      end
+
 end
