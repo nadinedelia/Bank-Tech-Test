@@ -17,11 +17,12 @@ class Account
         @balance += money
         transaction = @transaction.new(credit: money, balance: @balance)
         @transaction_history << transaction
+        puts "New deposit of £#{money} was saved into your account"
     end
 
     def balance
         @balance
-        # balance = '%.2f' % 
+        puts "You're current balance is £#{@balance}."
     end
 
     def withdraw(money)
@@ -32,15 +33,20 @@ class Account
 
         transaction = @transaction.new(debit: money, balance: @balance)
         @transaction_history << transaction
+        puts "Money withdrawn: £#{money}"
     end
     end
 
-
+    
     def statement
+
             puts @header
-            transaction_history.reverse.each do |trans|
-              puts trans
+            transaction_history.reverse.each do |tran|
+              puts tran
             end
-    end
+
+            # transaction_history.each { |trans| puts "#{date} || £#{credit} || £#{debit} || £#{balance}" }
+    
+        end
 
 end
