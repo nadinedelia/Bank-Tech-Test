@@ -1,19 +1,16 @@
 # frozen_string_literal: true
-
 require_relative 'transaction'
-# require_relative 'statement'
+require_relative 'statement'
 
 class Account
   attr_reader :balance, :transaction_history
 
-  def initialize(transaction = Transaction)
-    # statement = Statement.new
+  def initialize(transaction = Transaction, statement = Statement.new)
     @balance = 0
     @date = Time.now.strftime('%d/%m/%Y')
     @transaction_history = []
     @transaction = transaction
-    # @statement = statement
-    @header = "date          ||  credit  ||  debit  ||  balance\n"
+    @statement = statement
   end
 
   def deposit(money)
@@ -21,8 +18,6 @@ class Account
     transaction = @transaction.new(credit: money, balance: @balance)
     @transaction_history << transaction
   end
-
-  attr_reader :balance
 
   def withdraw(money)
     if @balance < money || @balance < 0
@@ -35,12 +30,7 @@ class Account
 end
   end
 
-  def print
-    puts @header
-    array = @transaction_history.map do |_transaction|
-      "#{@date}     ||   #{@credit}     || "\
-      "#{@debit}        ||  #{@balance}\n"
-    end
-    puts array.reverse.join('')
+  def print_statement
+    @statement.print(transaction_history)
     end
 end
