@@ -12,7 +12,7 @@ class Account
         @transaction_history = [] 
         @transaction = transaction
         # @statement = statement
-        @header = "date || credit || debit || balance\n"
+        @header = "date          ||  credit  ||  debit  ||  balance\n"
 
     end
 
@@ -41,8 +41,8 @@ class Account
     def print
         puts @header
         array = @transaction_history.map do |transaction|
-          "#{@date} || #{@credit} || "\
-          "#{@debit} || #{@balance}\n"
+          "#{@date}     ||   #{@credit}     || "\
+          "#{@debit}        ||  #{@balance}\n"
         end
         puts array.reverse.join("")
       end

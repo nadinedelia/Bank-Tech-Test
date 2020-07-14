@@ -98,6 +98,9 @@
       "/Users/nadinedelia/Projects/bank/lib/transaction.rb": {
         "lines": [
           1,
+          null,
+          1,
+          null,
           1,
           null,
           4,
@@ -165,6 +168,6 @@
         ]
       }
     },
-    "timestamp": 1594734874
+    "timestamp": 1594736449
   }
 }
