@@ -3,7 +3,7 @@
 class Statement
 
   def format(number)
-    number == 0 || number.nil? ? '     ' : '%.2f' % number
+    number == 0 || number.nil? ? '' : '%.2f' % number
   end
 
   def header
