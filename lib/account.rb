@@ -6,6 +6,7 @@ require_relative 'functionality'
 class Account
   attr_reader :balance, :transaction_history
 
+
   def initialize(transaction = Transaction, statement = Statement.new)
     @balance = 0
     @date = Time.now.strftime('%d/%m/%Y')
@@ -14,25 +15,28 @@ class Account
     @statement = statement
   end
 
+
   def deposit(money)
     if money < 0
         raise_error
     else
     increase_balance(money)
-    credit = new_credit(money)
-    save_transaction(credit)
+    credit_trans = new_credit(money)
+    save_transaction(credit_trans)
     end
   end
+
 
   def withdraw(money)
     if @balance < money || money < 0
       raise_error
     else
     decrease_balance(money)
-    debit = new_debit(money)
-    save_transaction(debit)
+    debit_trans = new_debit(money)
+    save_transaction(debit_trans)
 end
   end
+
 
   def print_statement
     @statement.print(transaction_history)
