@@ -32,4 +32,13 @@ describe Account do
     account.deposit(20)
     expect { account.withdraw(30) }.to raise_error(RuntimeError)
   end
+
+  it 'throws error when withdraw amount negative' do
+    expect { account.withdraw(-20) }.to raise_error(RuntimeError)
+  end
+
+  it 'throws error when deposit amount negative' do
+    expect { account.deposit(-50) }.to raise_error(RuntimeError)
+  end
+
 end
