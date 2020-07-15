@@ -45,8 +45,7 @@ class Account
     @statement.print(transaction_history)
   end
 
-    def save_transaction(transaction)
-      @transaction_history << transaction
-   end
-
+  def save_transaction(transaction)
+    @transaction_history << transaction
+ end
 end
