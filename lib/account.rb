@@ -2,6 +2,7 @@
 require_relative 'transaction'
 require_relative 'statement'
 require_relative 'functionality'
+require_relative 'formatting'
 
 class Account
   attr_reader :balance, :transaction_history
@@ -21,6 +22,7 @@ class Account
         raise_error
     else
     increase_balance(money)
+    increase_message(money)
     credit_trans = new_credit(money)
     save_transaction(credit_trans)
     end
@@ -32,6 +34,7 @@ class Account
       raise_error
     else
     decrease_balance(money)
+    decrease_message(money)
     debit_trans = new_debit(money)
     save_transaction(debit_trans)
 end
