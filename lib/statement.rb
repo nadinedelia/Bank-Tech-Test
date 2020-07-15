@@ -3,7 +3,7 @@
 class Statement
 
   def header
-    puts "date || credit || debit || balance\n"
+    puts "date       || credit || debit || balance\n"
   end
 
   def format(number)
@@ -13,8 +13,8 @@ class Statement
   def print(my_transactions)
     puts header
     array = my_transactions.map do | transaction|
-       "#{transaction.date}     ||   #{transaction.credit}     || "\
-       "#{transaction.debit}     ||  #{transaction.balance}\n"
+       "#{transaction.date} ||  #{transaction.credit}   || "\
+       "#{transaction.debit}   ||    #{transaction.balance}\n"
     end
     puts array.reverse.join('')
     end
