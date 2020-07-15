@@ -1,4 +1,4 @@
-# Bank tech test
+# Bank Tech Test
 
 ![](images/bank.png)
 
