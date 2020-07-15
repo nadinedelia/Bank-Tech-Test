@@ -47,7 +47,6 @@
           1,
           1,
           1,
-          1,
           null,
           1,
           1,
@@ -83,7 +82,16 @@
           null,
           null,
           1,
+          1,
+          null,
+          null,
+          1,
           0,
+          null,
+          null,
+          1,
+          4,
+          null,
           null,
           null
         ]
@@ -109,6 +117,11 @@
           null,
           null,
           1,
+          null,
+          1,
+          0,
+          null,
+          null,
           1,
           0,
           null,
@@ -122,19 +135,6 @@
           0,
           0,
           null,
-          null
-        ]
-      },
-      "/Users/nadinedelia/Projects/bank/lib/functionality.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          1,
           null
         ]
       },
@@ -150,14 +150,6 @@
           1,
           1,
           null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
           null
         ]
       },
@@ -201,6 +193,6 @@
         ]
       }
     },
-    "timestamp": 1594842188
+    "timestamp": 1594842508
   }
 }

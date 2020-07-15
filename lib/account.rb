@@ -2,7 +2,6 @@
 
 require_relative 'transaction'
 require_relative 'statement'
-require_relative 'functionality'
 require_relative 'formatting'
 
 class Account
@@ -38,7 +37,16 @@ class Account
     end
   end
 
+  def raise_error
+    raise 'Transaction not possible - insufficient funds'
+  end
+
   def print_statement
     @statement.print(transaction_history)
-    end
+  end
+
+    def save_transaction(transaction)
+      @transaction_history << transaction
+   end
+
 end

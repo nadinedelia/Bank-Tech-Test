@@ -1,9 +1,14 @@
 # frozen_string_literal: true
 
 class Statement
+
   def format(number)
     number == 0 || number.nil? ? '     ' : '%.2f' % number
   end
+
+  def header
+    puts "date || credit || debit || balance"
+    end
 
   def print(my_transactions)
     puts header
@@ -12,6 +17,5 @@ class Statement
       "#{format(transaction.debit)} || #{format(transaction.balance)}\n"
     end
     puts array.reverse.join('')
-    puts footer
     end
 end
