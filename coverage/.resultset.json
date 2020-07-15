@@ -99,10 +99,10 @@
           1,
           null,
           1,
-          4,
-          4,
-          4,
-          4,
+          6,
+          6,
+          6,
+          6,
           null,
           null
         ]
@@ -112,7 +112,6 @@
           null,
           null,
           1,
-          null,
           null,
           1,
           0,
@@ -192,27 +191,32 @@
       },
       "/Users/nadinedelia/Projects/bank/spec/transaction_spec.rb": {
         "lines": [
+          1,
           null,
+          1,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
           null,
           null,
-          null,
-          null,
-          null,
           1,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1594811843
+    "timestamp": 1594820931
   }
 }
