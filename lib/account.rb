@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require_relative 'transaction'
 require_relative 'statement'
+require_relative 'functionality'
 
 class Account
   attr_reader :balance, :transaction_history
@@ -14,19 +15,22 @@ class Account
   end
 
   def deposit(money)
-    @balance += money
-    transaction = @transaction.new(credit: money, balance: @balance)
-    @transaction_history << transaction
+    if money < 0
+        raise_error
+    else
+    increase_balance(money)
+    new_credit(money)
+    save_transaction(transaction)
+    end
   end
 
   def withdraw(money)
-    if @balance < money || @balance < 0
-      raise "You don't have sufficient funds"
+    if @balance < money || money < 0
+      raise_error
     else
-      @balance -= money
-
-      transaction = @transaction.new(debit: money, balance: @balance)
-      @transaction_history << transaction
+    decrease_balance(money)
+    new_debit(money)
+    save_transaction(transaction)
 end
   end
 
