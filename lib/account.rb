@@ -19,8 +19,8 @@ class Account
         raise_error
     else
     increase_balance(money)
-    new_credit(money)
-    save_transaction(transaction)
+    credit = new_credit(money)
+    save_transaction(credit)
     end
   end
 
@@ -29,8 +29,8 @@ class Account
       raise_error
     else
     decrease_balance(money)
-    new_debit(money)
-    save_transaction(transaction)
+    debit = new_debit(money)
+    save_transaction(debit)
 end
   end
 
