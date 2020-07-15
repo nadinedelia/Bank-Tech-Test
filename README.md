@@ -64,6 +64,14 @@ So I can have proof for my settled-status application,
 I want to be able to print my bank statements
 ```
 
+- [x] Done
+
+```
+As a bank account owner,
+So I don't lose money because of a typo
+I don't want to be able to deposit a negative amount of money
+```
+
 - [] in progress
 
 ## Specification
