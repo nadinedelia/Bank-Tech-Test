@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-# optional IRB interface 
+# OPTIONAL IRB INTERFACE:
+# can be used by calling the methods in the account class (deposit & withdraw) to increase readability 
 
 def increase_message(money)
   puts "________________________________________________\n

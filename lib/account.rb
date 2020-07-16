@@ -2,7 +2,6 @@
 
 require_relative 'transaction'
 require_relative 'statement'
-# require_relative 'strings'
 
 class Account
   attr_reader :balance, :transaction_history
@@ -21,7 +20,6 @@ class Account
     @balance += money
     transaction = @transaction.new(credit: money, balance: @balance)
     save_transaction(transaction)
-    # increase_message(money)
 end
 
   def withdraw(money)
@@ -29,7 +27,6 @@ end
     @balance -= money
     transaction = @transaction.new(debit: money, balance: @balance)
     save_transaction(transaction)
-    # decrease_message(money)
   end
 
 
