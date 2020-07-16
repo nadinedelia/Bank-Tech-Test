@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/nadinedelia/Projects/bank/spec/account_spec.rb": {
+      "/Users/nadinedelia/Projects/Bank-Tech-Test/spec/account_spec.rb": {
         "lines": [
           null,
           null,
@@ -48,7 +48,7 @@
           null
         ]
       },
-      "/Users/nadinedelia/Projects/bank/lib/account.rb": {
+      "/Users/nadinedelia/Projects/Bank-Tech-Test/lib/account.rb": {
         "lines": [
           null,
           null,
@@ -69,24 +69,16 @@
           null,
           1,
           4,
-          1,
-          null,
           3,
           3,
           3,
-          3,
-          null,
           null,
           null,
           1,
           3,
-          2,
-          null,
           1,
           1,
           1,
-          1,
-          null,
           null,
           null,
           1,
@@ -103,7 +95,7 @@
           null
         ]
       },
-      "/Users/nadinedelia/Projects/bank/lib/transaction.rb": {
+      "/Users/nadinedelia/Projects/Bank-Tech-Test/lib/transaction.rb": {
         "lines": [
           null,
           null,
@@ -119,7 +111,7 @@
           null
         ]
       },
-      "/Users/nadinedelia/Projects/bank/lib/statement.rb": {
+      "/Users/nadinedelia/Projects/Bank-Tech-Test/lib/statement.rb": {
         "lines": [
           null,
           null,
@@ -143,7 +135,7 @@
           null
         ]
       },
-      "/Users/nadinedelia/Projects/bank/lib/formatting.rb": {
+      "/Users/nadinedelia/Projects/Bank-Tech-Test/lib/formatting.rb": {
         "lines": [
           null,
           null,
@@ -158,7 +150,7 @@
           null
         ]
       },
-      "/Users/nadinedelia/Projects/bank/spec/statement_spec.rb": {
+      "/Users/nadinedelia/Projects/Bank-Tech-Test/spec/statement_spec.rb": {
         "lines": [
           null,
           null,
@@ -178,7 +170,7 @@
           null
         ]
       },
-      "/Users/nadinedelia/Projects/bank/spec/transaction_spec.rb": {
+      "/Users/nadinedelia/Projects/Bank-Tech-Test/spec/transaction_spec.rb": {
         "lines": [
           null,
           null,
@@ -204,6 +196,6 @@
         ]
       }
     },
-    "timestamp": 1594847353
+    "timestamp": 1594891640
   }
 }

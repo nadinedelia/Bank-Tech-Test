@@ -16,25 +16,17 @@ class Account
   end
 
   def deposit(money)
-    if money < 0
-      raise_error
-    else
-      @balance += money
-      transaction = @transaction.new(credit: money, balance: @balance)
-      save_transaction(transaction)
-      increase_message(money)
-    end
-  end
+    money < 0 ? raise_error : @balance += money
+    transaction = @transaction.new(credit: money, balance: @balance)
+    save_transaction(transaction)
+    increase_message(money)
+end
 
   def withdraw(money)
-    if @balance < money || money < 0
-      raise_error
-    else
-      @balance -= money
-      transaction = @transaction.new(debit: money, balance: @balance)
-      save_transaction(transaction)
-      decrease_message(money)
-    end
+    @balance < money || money < 0 ? raise_error : @balance -= money
+    transaction = @transaction.new(debit: money, balance: @balance)
+    save_transaction(transaction)
+    decrease_message(money)
   end
 
   def raise_error
