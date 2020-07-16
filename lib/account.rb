@@ -7,6 +7,7 @@ require_relative 'formatting'
 class Account
   attr_reader :balance, :transaction_history
 
+
   def initialize(transaction = Transaction, statement = Statement.new)
     @balance = 0
     @date = Time.now.strftime('%d/%m/%Y')
@@ -16,22 +17,21 @@ class Account
   end
 
   def deposit(money)
-    money < 0 ? raise_error : @balance += money
+    raise "It's not possible to deposit a negative amount" if money < 0
+    @balance += money
     transaction = @transaction.new(credit: money, balance: @balance)
     save_transaction(transaction)
     increase_message(money)
 end
 
   def withdraw(money)
-    @balance < money || money < 0 ? raise_error : @balance -= money
+    raise "Transaction not possible - insufficient funds" if @balance < money || money < 0
+    @balance -= money
     transaction = @transaction.new(debit: money, balance: @balance)
     save_transaction(transaction)
     decrease_message(money)
   end
 
-  def raise_error
-    raise 'Transaction not possible - insufficient funds'
-  end
 
   def print_statement
     @statement.print(transaction_history)
