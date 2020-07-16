@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# optional IRB interface 
+
 def increase_message(money)
   puts "________________________________________________\n
     You deposited £#{money}. New balance: £#{@balance}\n________________________________________________"
