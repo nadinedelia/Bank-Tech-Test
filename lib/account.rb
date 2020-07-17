@@ -8,7 +8,6 @@ class Account
 
   def initialize(transaction = Transaction, statement = Statement.new)
     @balance = 0
-    @date = Time.now.strftime('%d/%m/%Y')
     @transaction_history = []
     @transaction = transaction
     @statement = statement
