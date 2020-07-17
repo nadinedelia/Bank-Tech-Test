@@ -17,8 +17,7 @@ class Account
     raise "It's not possible to deposit a negative amount" if money < 0
 
     @balance += money
-    transaction = @transaction.new(credit: money, balance: @balance)
-    save_transaction(transaction)
+    transaction_history.push(@transaction.new(credit: money, balance: @balance))
     "You deposited £#{money}. New balance: £#{@balance}"
 end
 
@@ -26,8 +25,7 @@ end
     raise 'Transaction not possible - insufficient funds' if @balance < money || money < 0
 
     @balance -= money
-    transaction = @transaction.new(debit: money, balance: @balance)
-    save_transaction(transaction)
+    transaction_history.push(@transaction.new(debit: money, balance: @balance))
     "You've withdrawn £#{money}. New balance: £#{@balance}"
   end
 
@@ -35,7 +33,4 @@ end
     @statement.print(transaction_history)
   end
 
-  def save_transaction(transaction)
-    @transaction_history << transaction
- end
 end
