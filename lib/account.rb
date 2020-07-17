@@ -19,6 +19,7 @@ class Account
     @balance += money
     transaction = @transaction.new(credit: money, balance: @balance)
     save_transaction(transaction)
+    "You deposited £#{money}. New balance: £#{@balance}"
 end
 
   def withdraw(money)
@@ -27,6 +28,7 @@ end
     @balance -= money
     transaction = @transaction.new(debit: money, balance: @balance)
     save_transaction(transaction)
+    "You've withdrawn £#{money}. New balance: £#{@balance}"
   end
 
   def print_statement
